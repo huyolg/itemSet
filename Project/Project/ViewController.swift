@@ -7,13 +7,21 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: HBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
     }
-
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        let ble_vc = HBluetoothDeviceListController()
+//        let nav_blue = UINavigationController(rootViewController: HBluetoothDeviceListController())
+        
+        self.navigationController?.pushViewController(ble_vc, animated: true)
+    }
 
 }
 
