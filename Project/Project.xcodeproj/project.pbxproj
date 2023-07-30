@@ -24,6 +24,9 @@
 		05CFEB5D2A6D627B00A57FF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05CFEB5B2A6D627B00A57FF6 /* Main.storyboard */; };
 		05CFEB5F2A6D627C00A57FF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05CFEB5E2A6D627C00A57FF6 /* Assets.xcassets */; };
 		05CFEB622A6D627C00A57FF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05CFEB602A6D627C00A57FF6 /* LaunchScreen.storyboard */; };
+		05CFEB6B2A6D646900A57FF6 /* RootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CFEB6A2A6D646900A57FF6 /* RootController.swift */; };
+		05CFEB6D2A6D682400A57FF6 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05CFEB6C2A6D682400A57FF6 /* Config.plist */; };
+		05CFEB702A6E69B700A57FF6 /* HHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CFEB6F2A6E69B700A57FF6 /* HHomeViewController.swift */; };
 		1C42DA7F67975D12162EC9DA /* Pods_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E5B6A1167192A4DD23930D /* Pods_Project.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +51,9 @@
 		05CFEB5E2A6D627C00A57FF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05CFEB612A6D627C00A57FF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		05CFEB632A6D627C00A57FF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05CFEB6A2A6D646900A57FF6 /* RootController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootController.swift; sourceTree = "<group>"; };
+		05CFEB6C2A6D682400A57FF6 /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
+		05CFEB6F2A6E69B700A57FF6 /* HHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHomeViewController.swift; sourceTree = "<group>"; };
 		B5E5B6A1167192A4DD23930D /* Pods_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDD69C098B3CBB53A865EFAE /* Pods-Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project.release.xcconfig"; path = "Target Support Files/Pods-Project/Pods-Project.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -144,6 +150,7 @@
 				046C096B2A70CE4A00E02EBC /* SucceedsPostAction.sh */,
 				042D02072A6F994900678042 /* Base */,
 				042D02002A6F768300678042 /* BluetoothMonitor */,
+				05CFEB6E2A6E690400A57FF6 /* HomePage */,
 				05CFEB692A6D636700A57FF6 /* Tabbar */,
 				05CFEB552A6D627B00A57FF6 /* AppDelegate.swift */,
 				05CFEB572A6D627B00A57FF6 /* SceneDelegate.swift */,
@@ -152,6 +159,7 @@
 				05CFEB5E2A6D627C00A57FF6 /* Assets.xcassets */,
 				05CFEB602A6D627C00A57FF6 /* LaunchScreen.storyboard */,
 				05CFEB632A6D627C00A57FF6 /* Info.plist */,
+				05CFEB6C2A6D682400A57FF6 /* Config.plist */,
 			);
 			path = Project;
 			sourceTree = "<group>";
@@ -159,8 +167,17 @@
 		05CFEB692A6D636700A57FF6 /* Tabbar */ = {
 			isa = PBXGroup;
 			children = (
+				05CFEB6A2A6D646900A57FF6 /* RootController.swift */,
 			);
 			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		05CFEB6E2A6E690400A57FF6 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				05CFEB6F2A6E69B700A57FF6 /* HHomeViewController.swift */,
+			);
+			path = HomePage;
 			sourceTree = "<group>";
 		};
 		B3AEBE26443966B754662AE5 /* Pods */ = {
@@ -240,6 +257,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05CFEB6D2A6D682400A57FF6 /* Config.plist in Resources */,
 				05CFEB622A6D627C00A57FF6 /* LaunchScreen.storyboard in Resources */,
 				046C096C2A70CE4A00E02EBC /* SucceedsPostAction.sh in Resources */,
 				05CFEB5F2A6D627C00A57FF6 /* Assets.xcassets in Resources */,
@@ -305,6 +323,8 @@
 				046C09752A70EC7200E02EBC /* HStore.swift in Sources */,
 				042D020B2A6F9DE800678042 /* HBaseUtils.swift in Sources */,
 				042D02022A6F786300678042 /* HBluetoothDeviceListController.swift in Sources */,
+				05CFEB702A6E69B700A57FF6 /* HHomeViewController.swift in Sources */,
+				05CFEB6B2A6D646900A57FF6 /* RootController.swift in Sources */,
 				05CFEB562A6D627B00A57FF6 /* AppDelegate.swift in Sources */,
 				05CFEB582A6D627B00A57FF6 /* SceneDelegate.swift in Sources */,
 				046C096A2A70C63C00E02EBC /* HBluetoothDeviceModel.swift in Sources */,
