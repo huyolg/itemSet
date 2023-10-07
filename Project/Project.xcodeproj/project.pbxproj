@@ -18,6 +18,16 @@
 		046C09712A70E9EE00E02EBC /* HBLECentralManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046C09702A70E9EE00E02EBC /* HBLECentralManager.swift */; };
 		046C09732A70EB6B00E02EBC /* Peripheral+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046C09722A70EB6B00E02EBC /* Peripheral+Ext.swift */; };
 		046C09752A70EC7200E02EBC /* HStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046C09742A70EC7200E02EBC /* HStore.swift */; };
+		04E225BA2AD14A3C0012966B /* HConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E225B92AD14A3C0012966B /* HConfig.swift */; };
+		04E225BD2AD152F40012966B /* HHomePageSubViewUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E225BC2AD152F40012966B /* HHomePageSubViewUI.swift */; };
+		04E225BF2AD15E760012966B /* HHomePageSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E225BE2AD15E760012966B /* HHomePageSubView.swift */; };
+		04E225C22AD15EA00012966B /* HHomeSubViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E225C02AD15EA00012966B /* HHomeSubViewCell.swift */; };
+		04EDB0492A8337A400C09AAC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04EDB0482A8337A300C09AAC /* AVFoundation.framework */; };
+		04EDB04B2A8337AF00C09AAC /* AVFAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04EDB04A2A8337AE00C09AAC /* AVFAudio.framework */; };
+		04F682F22A7210D8002C4EAA /* HChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F682F12A7210D8002C4EAA /* HChatViewController.swift */; };
+		04F682FB2A721D28002C4EAA /* HPlaybackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F682FA2A721D28002C4EAA /* HPlaybackManager.swift */; };
+		04F682FE2A721DEB002C4EAA /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F682FD2A721DEB002C4EAA /* StringExt.swift */; };
+		04F683002A723EE8002C4EAA /* HAudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F682FF2A723EE8002C4EAA /* HAudioManager.swift */; };
 		05CFEB562A6D627B00A57FF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CFEB552A6D627B00A57FF6 /* AppDelegate.swift */; };
 		05CFEB582A6D627B00A57FF6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CFEB572A6D627B00A57FF6 /* SceneDelegate.swift */; };
 		05CFEB5A2A6D627B00A57FF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CFEB592A6D627B00A57FF6 /* ViewController.swift */; };
@@ -43,6 +53,16 @@
 		046C09702A70E9EE00E02EBC /* HBLECentralManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBLECentralManager.swift; sourceTree = "<group>"; };
 		046C09722A70EB6B00E02EBC /* Peripheral+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Peripheral+Ext.swift"; sourceTree = "<group>"; };
 		046C09742A70EC7200E02EBC /* HStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStore.swift; sourceTree = "<group>"; };
+		04E225B92AD14A3C0012966B /* HConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HConfig.swift; sourceTree = "<group>"; };
+		04E225BC2AD152F40012966B /* HHomePageSubViewUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHomePageSubViewUI.swift; sourceTree = "<group>"; };
+		04E225BE2AD15E760012966B /* HHomePageSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHomePageSubView.swift; sourceTree = "<group>"; };
+		04E225C02AD15EA00012966B /* HHomeSubViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHomeSubViewCell.swift; sourceTree = "<group>"; };
+		04EDB0482A8337A300C09AAC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		04EDB04A2A8337AE00C09AAC /* AVFAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFAudio.framework; path = System/Library/Frameworks/AVFAudio.framework; sourceTree = SDKROOT; };
+		04F682F12A7210D8002C4EAA /* HChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HChatViewController.swift; sourceTree = "<group>"; };
+		04F682FA2A721D28002C4EAA /* HPlaybackManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPlaybackManager.swift; sourceTree = "<group>"; };
+		04F682FD2A721DEB002C4EAA /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
+		04F682FF2A723EE8002C4EAA /* HAudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAudioManager.swift; sourceTree = "<group>"; };
 		05CFEB522A6D627B00A57FF6 /* Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05CFEB552A6D627B00A57FF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05CFEB572A6D627B00A57FF6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +83,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04EDB04B2A8337AF00C09AAC /* AVFAudio.framework in Frameworks */,
+				04EDB0492A8337A400C09AAC /* AVFoundation.framework in Frameworks */,
 				1C42DA7F67975D12162EC9DA /* Pods_Project.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -126,6 +148,58 @@
 			path = Manager;
 			sourceTree = "<group>";
 		};
+		04E225B82AD147320012966B /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		04E225BB2AD152480012966B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				04E225BC2AD152F40012966B /* HHomePageSubViewUI.swift */,
+				04E225BE2AD15E760012966B /* HHomePageSubView.swift */,
+				04E225C02AD15EA00012966B /* HHomeSubViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		04F682EF2A7207A1002C4EAA /* ASR */ = {
+			isa = PBXGroup;
+			children = (
+				04F682F92A721CA5002C4EAA /* Manager */,
+				04F682F02A72106E002C4EAA /* Controllers */,
+			);
+			path = ASR;
+			sourceTree = "<group>";
+		};
+		04F682F02A72106E002C4EAA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				04F682F12A7210D8002C4EAA /* HChatViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		04F682F92A721CA5002C4EAA /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				04F682FA2A721D28002C4EAA /* HPlaybackManager.swift */,
+				04F682FF2A723EE8002C4EAA /* HAudioManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		04F682FC2A721DA5002C4EAA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				04F682FD2A721DEB002C4EAA /* StringExt.swift */,
+				04E225B92AD14A3C0012966B /* HConfig.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		05CFEB492A6D627B00A57FF6 = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +221,9 @@
 		05CFEB542A6D627B00A57FF6 /* Project */ = {
 			isa = PBXGroup;
 			children = (
+				04E225B82AD147320012966B /* Pages */,
+				04F682FC2A721DA5002C4EAA /* Utils */,
+				04F682EF2A7207A1002C4EAA /* ASR */,
 				046C096B2A70CE4A00E02EBC /* SucceedsPostAction.sh */,
 				042D02072A6F994900678042 /* Base */,
 				042D02002A6F768300678042 /* BluetoothMonitor */,
@@ -175,6 +252,7 @@
 		05CFEB6E2A6E690400A57FF6 /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
+				04E225BB2AD152480012966B /* Views */,
 				05CFEB6F2A6E69B700A57FF6 /* HHomeViewController.swift */,
 			);
 			path = HomePage;
@@ -192,6 +270,8 @@
 		EEAA67329D5ADAD6EA17265F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				04EDB04A2A8337AE00C09AAC /* AVFAudio.framework */,
+				04EDB0482A8337A300C09AAC /* AVFoundation.framework */,
 				B5E5B6A1167192A4DD23930D /* Pods_Project.framework */,
 			);
 			name = Frameworks;
@@ -314,21 +394,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04E225C22AD15EA00012966B /* HHomeSubViewCell.swift in Sources */,
 				042D02062A6F78A700678042 /* HDeviceDetailController.swift in Sources */,
 				046C096F2A70E93A00E02EBC /* HBluetoothManager.swift in Sources */,
+				04F683002A723EE8002C4EAA /* HAudioManager.swift in Sources */,
+				04F682FE2A721DEB002C4EAA /* StringExt.swift in Sources */,
 				05CFEB5A2A6D627B00A57FF6 /* ViewController.swift in Sources */,
 				042D02092A6F996A00678042 /* HBaseViewController.swift in Sources */,
 				046C09712A70E9EE00E02EBC /* HBLECentralManager.swift in Sources */,
+				04F682F22A7210D8002C4EAA /* HChatViewController.swift in Sources */,
 				046C09672A70C3F700E02EBC /* HBluetoothDeviceCell.swift in Sources */,
 				046C09752A70EC7200E02EBC /* HStore.swift in Sources */,
+				04E225BA2AD14A3C0012966B /* HConfig.swift in Sources */,
 				042D020B2A6F9DE800678042 /* HBaseUtils.swift in Sources */,
 				042D02022A6F786300678042 /* HBluetoothDeviceListController.swift in Sources */,
 				05CFEB702A6E69B700A57FF6 /* HHomeViewController.swift in Sources */,
+				04E225BF2AD15E760012966B /* HHomePageSubView.swift in Sources */,
 				05CFEB6B2A6D646900A57FF6 /* RootController.swift in Sources */,
 				05CFEB562A6D627B00A57FF6 /* AppDelegate.swift in Sources */,
 				05CFEB582A6D627B00A57FF6 /* SceneDelegate.swift in Sources */,
 				046C096A2A70C63C00E02EBC /* HBluetoothDeviceModel.swift in Sources */,
+				04E225BD2AD152F40012966B /* HHomePageSubViewUI.swift in Sources */,
 				046C09732A70EB6B00E02EBC /* Peripheral+Ext.swift in Sources */,
+				04F682FB2A721D28002C4EAA /* HPlaybackManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

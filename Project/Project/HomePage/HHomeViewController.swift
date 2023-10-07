@@ -8,25 +8,52 @@
 import UIKit
 
 class HHomeViewController: UIViewController {
+    
+    var dataSource: [PageConfig] = []
+    
+    
+    lazy var tableView: UITableView = {
+        let view = UITableView(frame: CGRect(origin: CGPoint(x: 0, y: 0), size: CGSize(width: ScreenWidth, height: ScreenWidth)), style: .plain)
+        view.delegate = self
+        view.dataSource = self
+        view.register(HHomeSubViewCell.self, forCellReuseIdentifier: "HHomeSubViewCell")
+        return view
+    }()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "首页"
-//        view.backgroundColor = UIColor.blue
-        let subView = UIView(frame: CGRect(origin: .zero, size: CGSize(width: 200, height: 200)))
-        subView.backgroundColor = UIColor.red
-        view.addSubview(subView)
+        dataSource = HConfig.loadConfigControllers("homePages")
+
+        view.addSubview(tableView)
+        tableView.reloadData()
+    }
+
+}
+
+extension HHomeViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return dataSource.count
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "HHomeSubViewCell", for: indexPath)
+        if indexPath.row < dataSource.count {
+            let item = dataSource[indexPath.row]
+            
+            cell.textLabel?.text = item.titleName
+        }
+        return cell
     }
-    */
-
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row < dataSource.count {
+            let item = dataSource[indexPath.row]
+            
+            let vc = item.controllerName
+            navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+    
 }

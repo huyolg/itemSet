@@ -45,5 +45,20 @@
 			<string>Self</string>
 		</dict>
 	</array>
+	<key>homePages</key>
+	<array>
+		<dict>
+			<key>titleName</key>
+			<string>Bluetooth</string>
+			<key>controllerName</key>
+			<string>HBluetoothDeviceListController</string>
+		</dict>
+		<dict>
+			<key>titleName</key>
+			<string>Bluetooth</string>
+			<key>controllerName</key>
+			<string>HBluetoothDeviceListController</string>
+		</dict>
+	</array>
 </dict>
 </plist>

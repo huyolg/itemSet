@@ -7,5 +7,6 @@ target 'Project' do
   pod "SnapKit"
   pod 'CTMediator'
   pod 'ProgressHUD'
+  pod 'IQKeyboardManager'
   
 end
