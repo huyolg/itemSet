@@ -27,21 +27,18 @@ class HBluetoothDeviceListController: HBaseViewController {
     }()
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "设备列表"
+        navigationItem.title = "设备列表"
         
         view.backgroundColor = UIColor.white
         
-        let btn = UIButton(type: .custom)
-        btn.setTitle("Scan", for: .normal)
-        btn.bounds = CGRect(origin: .zero, size: CGSize(width: 50, height: 50))
-        btn.addTarget(self, action: #selector(scanForPeripherals), for: .touchUpInside)
-        navigationItem.rightBarButtonItem = UIBarButtonItem(customView: btn)
+        backView()
         
         tabView.frame = view.bounds
         view.addSubview(tabView)
         centralManager = CBCentralManager(delegate: self, queue: nil)
         
         scanForPeripherals()
+        HHUD.showStatus(status: .error)
     }
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
@@ -89,6 +86,11 @@ class HBluetoothDeviceListController: HBaseViewController {
     public func disconnectWithPeripheral(_ per: CBPeripheral) {
         centralManager?.cancelPeripheralConnection(per)
 //        self.serviceCharacteristics = []
+    }
+    
+    
+    deinit {
+        print("\(self) dealloc")
     }
 }
 
@@ -244,6 +246,7 @@ extension HBluetoothDeviceListController: CBCentralManagerDelegate {
 //            }
 //        }
     }
+
 }
 
 extension HBluetoothDeviceListController: CBPeripheralDelegate {

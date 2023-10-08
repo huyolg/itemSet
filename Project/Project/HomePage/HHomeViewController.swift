@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HHomeViewController: UIViewController {
+class HHomeViewController: HBaseViewController {
     
     var dataSource: [PageConfig] = []
     
@@ -28,6 +28,17 @@ class HHomeViewController: UIViewController {
 
         view.addSubview(tableView)
         tableView.reloadData()
+        HHUD.showStatus(status: .successed)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        parent?.tabBarController?.tabBar.changeTabBar(hidden: true, animated: true)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        parent?.tabBarController?.tabBar.changeTabBar(hidden: false, animated: true)
     }
 
 }

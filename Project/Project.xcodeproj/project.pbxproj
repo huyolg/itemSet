@@ -11,6 +11,7 @@
 		042D02062A6F78A700678042 /* HDeviceDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042D02052A6F78A700678042 /* HDeviceDetailController.swift */; };
 		042D02092A6F996A00678042 /* HBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042D02082A6F996A00678042 /* HBaseViewController.swift */; };
 		042D020B2A6F9DE800678042 /* HBaseUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042D020A2A6F9DE800678042 /* HBaseUtils.swift */; };
+		0435D1B82AD24D360090BAD5 /* HHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0435D1B72AD24D360090BAD5 /* HHUD.swift */; };
 		046C09672A70C3F700E02EBC /* HBluetoothDeviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046C09662A70C3F700E02EBC /* HBluetoothDeviceCell.swift */; };
 		046C096A2A70C63C00E02EBC /* HBluetoothDeviceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046C09692A70C63C00E02EBC /* HBluetoothDeviceModel.swift */; };
 		046C096C2A70CE4A00E02EBC /* SucceedsPostAction.sh in Resources */ = {isa = PBXBuildFile; fileRef = 046C096B2A70CE4A00E02EBC /* SucceedsPostAction.sh */; };
@@ -46,6 +47,7 @@
 		042D02052A6F78A700678042 /* HDeviceDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDeviceDetailController.swift; sourceTree = "<group>"; };
 		042D02082A6F996A00678042 /* HBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBaseViewController.swift; sourceTree = "<group>"; };
 		042D020A2A6F9DE800678042 /* HBaseUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBaseUtils.swift; sourceTree = "<group>"; };
+		0435D1B72AD24D360090BAD5 /* HHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHUD.swift; sourceTree = "<group>"; };
 		046C09662A70C3F700E02EBC /* HBluetoothDeviceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBluetoothDeviceCell.swift; sourceTree = "<group>"; };
 		046C09692A70C63C00E02EBC /* HBluetoothDeviceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBluetoothDeviceModel.swift; sourceTree = "<group>"; };
 		046C096B2A70CE4A00E02EBC /* SucceedsPostAction.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = SucceedsPostAction.sh; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 			children = (
 				04F682FD2A721DEB002C4EAA /* StringExt.swift */,
 				04E225B92AD14A3C0012966B /* HConfig.swift */,
+				0435D1B72AD24D360090BAD5 /* HHUD.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -416,6 +419,7 @@
 				046C096A2A70C63C00E02EBC /* HBluetoothDeviceModel.swift in Sources */,
 				04E225BD2AD152F40012966B /* HHomePageSubViewUI.swift in Sources */,
 				046C09732A70EB6B00E02EBC /* Peripheral+Ext.swift in Sources */,
+				0435D1B82AD24D360090BAD5 /* HHUD.swift in Sources */,
 				04F682FB2A721D28002C4EAA /* HPlaybackManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -574,7 +578,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -606,7 +610,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
