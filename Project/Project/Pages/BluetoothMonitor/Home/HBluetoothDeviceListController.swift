@@ -19,7 +19,7 @@ class HBluetoothDeviceListController: HBaseViewController {
     
     lazy var tabView: UITableView = {
         let tbv = UITableView(frame: CGRect.zero, style: .plain)
-        tbv.automaticallyAdjustsScrollIndicatorInsets = false
+//        tbv.automaticallyAdjustsScrollIndicatorInsets = false
         tbv.register(HBluetoothDeviceCell.self, forCellReuseIdentifier: "HBluetoothDeviceCell")
         tbv.delegate = self
         tbv.dataSource = self

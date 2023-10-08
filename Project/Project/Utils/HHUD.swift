@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import ProgressHUD
+//import ProgressHUD
 
 class HHUD: NSObject {
     public enum Status : Int, @unchecked Sendable {
@@ -16,22 +16,22 @@ class HHUD: NSObject {
     }
     
     static func show(_ tips: String? = nil) {
-        ProgressHUD.show(tips)
+//        ProgressHUD.show(tips)
     }
     
     static func showStatus(_ tips: String? = nil, status: Status) {
-        switch status {
-        case .successed:
-            ProgressHUD.showSucceed(tips)
-        case .failed:
-            ProgressHUD.showFailed(tips)
-        case .error:
-            ProgressHUD.showError(tips)
-        }
+//        switch status {
+//        case .successed:
+//            ProgressHUD.showSucceed(tips)
+//        case .failed:
+//            ProgressHUD.showFailed(tips)
+//        case .error:
+//            ProgressHUD.showError(tips)
+//        }
     }
     
 
     static func hidden() {
-        ProgressHUD.dismiss()
+//        ProgressHUD.dismiss()
     }
 }

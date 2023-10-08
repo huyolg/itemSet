@@ -55,9 +55,9 @@
 		</dict>
 		<dict>
 			<key>titleName</key>
-			<string>Bluetooth</string>
+			<string>DoodingBoard</string>
 			<key>controllerName</key>
-			<string>HBluetoothDeviceListController</string>
+			<string>DoodlingBoardController</string>
 		</dict>
 	</array>
 </dict>

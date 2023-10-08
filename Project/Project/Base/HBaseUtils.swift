@@ -7,8 +7,7 @@
 
 import UIKit
 
-let ScreenWidth = UIScreen.main.bounds.width
-let ScreenHeight = UIScreen.main.bounds.height
+
 
 class HBaseUtils: NSObject {
 

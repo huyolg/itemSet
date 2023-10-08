@@ -12,6 +12,10 @@
 		042D02092A6F996A00678042 /* HBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042D02082A6F996A00678042 /* HBaseViewController.swift */; };
 		042D020B2A6F9DE800678042 /* HBaseUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042D020A2A6F9DE800678042 /* HBaseUtils.swift */; };
 		0435D1B82AD24D360090BAD5 /* HHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0435D1B72AD24D360090BAD5 /* HHUD.swift */; };
+		0435D1BB2AD2570B0090BAD5 /* DoodlingBoardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0435D1BA2AD2570B0090BAD5 /* DoodlingBoardController.swift */; };
+		0435D1BE2AD258200090BAD5 /* DoodlingBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0435D1BD2AD258200090BAD5 /* DoodlingBoardView.swift */; };
+		0435D1C02AD2594F0090BAD5 /* HThemeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0435D1BF2AD2594F0090BAD5 /* HThemeColor.swift */; };
+		0435D1C22AD27CB90090BAD5 /* HDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0435D1C12AD27CB90090BAD5 /* HDevice.swift */; };
 		046C09672A70C3F700E02EBC /* HBluetoothDeviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046C09662A70C3F700E02EBC /* HBluetoothDeviceCell.swift */; };
 		046C096A2A70C63C00E02EBC /* HBluetoothDeviceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046C09692A70C63C00E02EBC /* HBluetoothDeviceModel.swift */; };
 		046C096C2A70CE4A00E02EBC /* SucceedsPostAction.sh in Resources */ = {isa = PBXBuildFile; fileRef = 046C096B2A70CE4A00E02EBC /* SucceedsPostAction.sh */; };
@@ -48,6 +52,10 @@
 		042D02082A6F996A00678042 /* HBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBaseViewController.swift; sourceTree = "<group>"; };
 		042D020A2A6F9DE800678042 /* HBaseUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBaseUtils.swift; sourceTree = "<group>"; };
 		0435D1B72AD24D360090BAD5 /* HHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHUD.swift; sourceTree = "<group>"; };
+		0435D1BA2AD2570B0090BAD5 /* DoodlingBoardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoodlingBoardController.swift; sourceTree = "<group>"; };
+		0435D1BD2AD258200090BAD5 /* DoodlingBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoodlingBoardView.swift; sourceTree = "<group>"; };
+		0435D1BF2AD2594F0090BAD5 /* HThemeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HThemeColor.swift; sourceTree = "<group>"; };
+		0435D1C12AD27CB90090BAD5 /* HDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDevice.swift; sourceTree = "<group>"; };
 		046C09662A70C3F700E02EBC /* HBluetoothDeviceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBluetoothDeviceCell.swift; sourceTree = "<group>"; };
 		046C09692A70C63C00E02EBC /* HBluetoothDeviceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBluetoothDeviceModel.swift; sourceTree = "<group>"; };
 		046C096B2A70CE4A00E02EBC /* SucceedsPostAction.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = SucceedsPostAction.sh; sourceTree = "<group>"; };
@@ -131,6 +139,23 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		0435D1B92AD256E10090BAD5 /* DoodingBoard */ = {
+			isa = PBXGroup;
+			children = (
+				0435D1BC2AD257FC0090BAD5 /* Views */,
+				0435D1BA2AD2570B0090BAD5 /* DoodlingBoardController.swift */,
+			);
+			path = DoodingBoard;
+			sourceTree = "<group>";
+		};
+		0435D1BC2AD257FC0090BAD5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0435D1BD2AD258200090BAD5 /* DoodlingBoardView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		046C09682A70C61100E02EBC /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +178,8 @@
 		04E225B82AD147320012966B /* Pages */ = {
 			isa = PBXGroup;
 			children = (
+				0435D1B92AD256E10090BAD5 /* DoodingBoard */,
+				042D02002A6F768300678042 /* BluetoothMonitor */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -199,6 +226,8 @@
 				04F682FD2A721DEB002C4EAA /* StringExt.swift */,
 				04E225B92AD14A3C0012966B /* HConfig.swift */,
 				0435D1B72AD24D360090BAD5 /* HHUD.swift */,
+				0435D1BF2AD2594F0090BAD5 /* HThemeColor.swift */,
+				0435D1C12AD27CB90090BAD5 /* HDevice.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -229,7 +258,6 @@
 				04F682EF2A7207A1002C4EAA /* ASR */,
 				046C096B2A70CE4A00E02EBC /* SucceedsPostAction.sh */,
 				042D02072A6F994900678042 /* Base */,
-				042D02002A6F768300678042 /* BluetoothMonitor */,
 				05CFEB6E2A6E690400A57FF6 /* HomePage */,
 				05CFEB692A6D636700A57FF6 /* Tabbar */,
 				05CFEB552A6D627B00A57FF6 /* AppDelegate.swift */,
@@ -401,14 +429,18 @@
 				042D02062A6F78A700678042 /* HDeviceDetailController.swift in Sources */,
 				046C096F2A70E93A00E02EBC /* HBluetoothManager.swift in Sources */,
 				04F683002A723EE8002C4EAA /* HAudioManager.swift in Sources */,
+				0435D1C22AD27CB90090BAD5 /* HDevice.swift in Sources */,
 				04F682FE2A721DEB002C4EAA /* StringExt.swift in Sources */,
 				05CFEB5A2A6D627B00A57FF6 /* ViewController.swift in Sources */,
 				042D02092A6F996A00678042 /* HBaseViewController.swift in Sources */,
+				0435D1C02AD2594F0090BAD5 /* HThemeColor.swift in Sources */,
 				046C09712A70E9EE00E02EBC /* HBLECentralManager.swift in Sources */,
 				04F682F22A7210D8002C4EAA /* HChatViewController.swift in Sources */,
 				046C09672A70C3F700E02EBC /* HBluetoothDeviceCell.swift in Sources */,
 				046C09752A70EC7200E02EBC /* HStore.swift in Sources */,
 				04E225BA2AD14A3C0012966B /* HConfig.swift in Sources */,
+				0435D1BE2AD258200090BAD5 /* DoodlingBoardView.swift in Sources */,
+				0435D1BB2AD2570B0090BAD5 /* DoodlingBoardController.swift in Sources */,
 				042D020B2A6F9DE800678042 /* HBaseUtils.swift in Sources */,
 				042D02022A6F786300678042 /* HBluetoothDeviceListController.swift in Sources */,
 				05CFEB702A6E69B700A57FF6 /* HHomeViewController.swift in Sources */,
@@ -578,7 +610,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -610,7 +642,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
