@@ -40,6 +40,6 @@ class HBaseViewController: UIViewController {
     }
 
     deinit {
-        print("\(self) dealloc")
+        print("------ \(type(of: self)) dealloc ------")
     }
 }

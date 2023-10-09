@@ -16,6 +16,18 @@
 		0435D1BE2AD258200090BAD5 /* DoodlingBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0435D1BD2AD258200090BAD5 /* DoodlingBoardView.swift */; };
 		0435D1C02AD2594F0090BAD5 /* HThemeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0435D1BF2AD2594F0090BAD5 /* HThemeColor.swift */; };
 		0435D1C22AD27CB90090BAD5 /* HDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0435D1C12AD27CB90090BAD5 /* HDevice.swift */; };
+		0463EFCF2AD39B7C00FD4B09 /* HDirectBroadcastingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0463EFCE2AD39B7C00FD4B09 /* HDirectBroadcastingPage.swift */; };
+		0463EFD22AD3AD9400FD4B09 /* HDirectRoomListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0463EFD12AD3AD9400FD4B09 /* HDirectRoomListPage.swift */; };
+		0463EFD72AD3AE5F00FD4B09 /* Rooms.json in Resources */ = {isa = PBXBuildFile; fileRef = 0463EFD62AD3AE5F00FD4B09 /* Rooms.json */; };
+		0463EFDA2AD3C29E00FD4B09 /* HDirectRoomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0463EFD92AD3C29E00FD4B09 /* HDirectRoomViewModel.swift */; };
+		0463EFDC2AD3CF7C00FD4B09 /* HBroadcastingFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0463EFDB2AD3CF7C00FD4B09 /* HBroadcastingFactory.swift */; };
+		0463EFDF2AD3D11200FD4B09 /* HToolBoxRoomPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0463EFDE2AD3D11200FD4B09 /* HToolBoxRoomPage.swift */; };
+		0463EFE12AD3D29D00FD4B09 /* HRTCRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0463EFE02AD3D29D00FD4B09 /* HRTCRoomView.swift */; };
+		0463EFE32AD3D2BE00FD4B09 /* HToolBoxRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0463EFE22AD3D2BE00FD4B09 /* HToolBoxRoomView.swift */; };
+		0463EFE52AD3D2ED00FD4B09 /* HBroadcastingRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0463EFE42AD3D2ED00FD4B09 /* HBroadcastingRoomView.swift */; };
+		0463EFE82AD3EAF500FD4B09 /* HDBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0463EFE72AD3EAF500FD4B09 /* HDBottomView.swift */; };
+		0463EFEA2AD3EF4000FD4B09 /* UIView+frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0463EFE92AD3EF4000FD4B09 /* UIView+frame.swift */; };
+		0463EFEC2AD3FBA800FD4B09 /* HBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0463EFEB2AD3FBA800FD4B09 /* HBaseView.swift */; };
 		046C09672A70C3F700E02EBC /* HBluetoothDeviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046C09662A70C3F700E02EBC /* HBluetoothDeviceCell.swift */; };
 		046C096A2A70C63C00E02EBC /* HBluetoothDeviceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046C09692A70C63C00E02EBC /* HBluetoothDeviceModel.swift */; };
 		046C096C2A70CE4A00E02EBC /* SucceedsPostAction.sh in Resources */ = {isa = PBXBuildFile; fileRef = 046C096B2A70CE4A00E02EBC /* SucceedsPostAction.sh */; };
@@ -56,6 +68,18 @@
 		0435D1BD2AD258200090BAD5 /* DoodlingBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoodlingBoardView.swift; sourceTree = "<group>"; };
 		0435D1BF2AD2594F0090BAD5 /* HThemeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HThemeColor.swift; sourceTree = "<group>"; };
 		0435D1C12AD27CB90090BAD5 /* HDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDevice.swift; sourceTree = "<group>"; };
+		0463EFCE2AD39B7C00FD4B09 /* HDirectBroadcastingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDirectBroadcastingPage.swift; sourceTree = "<group>"; };
+		0463EFD12AD3AD9400FD4B09 /* HDirectRoomListPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDirectRoomListPage.swift; sourceTree = "<group>"; };
+		0463EFD62AD3AE5F00FD4B09 /* Rooms.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Rooms.json; sourceTree = "<group>"; };
+		0463EFD92AD3C29E00FD4B09 /* HDirectRoomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDirectRoomViewModel.swift; sourceTree = "<group>"; };
+		0463EFDB2AD3CF7C00FD4B09 /* HBroadcastingFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBroadcastingFactory.swift; sourceTree = "<group>"; };
+		0463EFDE2AD3D11200FD4B09 /* HToolBoxRoomPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HToolBoxRoomPage.swift; sourceTree = "<group>"; };
+		0463EFE02AD3D29D00FD4B09 /* HRTCRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRTCRoomView.swift; sourceTree = "<group>"; };
+		0463EFE22AD3D2BE00FD4B09 /* HToolBoxRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HToolBoxRoomView.swift; sourceTree = "<group>"; };
+		0463EFE42AD3D2ED00FD4B09 /* HBroadcastingRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBroadcastingRoomView.swift; sourceTree = "<group>"; };
+		0463EFE72AD3EAF500FD4B09 /* HDBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDBottomView.swift; sourceTree = "<group>"; };
+		0463EFE92AD3EF4000FD4B09 /* UIView+frame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+frame.swift"; sourceTree = "<group>"; };
+		0463EFEB2AD3FBA800FD4B09 /* HBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBaseView.swift; sourceTree = "<group>"; };
 		046C09662A70C3F700E02EBC /* HBluetoothDeviceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBluetoothDeviceCell.swift; sourceTree = "<group>"; };
 		046C09692A70C63C00E02EBC /* HBluetoothDeviceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBluetoothDeviceModel.swift; sourceTree = "<group>"; };
 		046C096B2A70CE4A00E02EBC /* SucceedsPostAction.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = SucceedsPostAction.sh; sourceTree = "<group>"; };
@@ -135,6 +159,7 @@
 			children = (
 				042D02082A6F996A00678042 /* HBaseViewController.swift */,
 				042D020A2A6F9DE800678042 /* HBaseUtils.swift */,
+				0463EFEB2AD3FBA800FD4B09 /* HBaseView.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -152,6 +177,63 @@
 			isa = PBXGroup;
 			children = (
 				0435D1BD2AD258200090BAD5 /* DoodlingBoardView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0463EFCD2AD39A4B00FD4B09 /* RTC */ = {
+			isa = PBXGroup;
+			children = (
+				0463EFE02AD3D29D00FD4B09 /* HRTCRoomView.swift */,
+			);
+			path = RTC;
+			sourceTree = "<group>";
+		};
+		0463EFD02AD3AD2C00FD4B09 /* DirectRooms */ = {
+			isa = PBXGroup;
+			children = (
+				0463EFE62AD3EACC00FD4B09 /* Views */,
+				0463EFDD2AD3D0E900FD4B09 /* ToolBox */,
+				0463EFD82AD3C24100FD4B09 /* ViewModel */,
+				0463EFD32AD3ADFB00FD4B09 /* Model */,
+				0463EFCD2AD39A4B00FD4B09 /* RTC */,
+				0463EFD12AD3AD9400FD4B09 /* HDirectRoomListPage.swift */,
+				0463EFCE2AD39B7C00FD4B09 /* HDirectBroadcastingPage.swift */,
+				0463EFDB2AD3CF7C00FD4B09 /* HBroadcastingFactory.swift */,
+			);
+			path = DirectRooms;
+			sourceTree = "<group>";
+		};
+		0463EFD32AD3ADFB00FD4B09 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0463EFD62AD3AE5F00FD4B09 /* Rooms.json */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0463EFD82AD3C24100FD4B09 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0463EFD92AD3C29E00FD4B09 /* HDirectRoomViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0463EFDD2AD3D0E900FD4B09 /* ToolBox */ = {
+			isa = PBXGroup;
+			children = (
+				0463EFDE2AD3D11200FD4B09 /* HToolBoxRoomPage.swift */,
+				0463EFE22AD3D2BE00FD4B09 /* HToolBoxRoomView.swift */,
+			);
+			path = ToolBox;
+			sourceTree = "<group>";
+		};
+		0463EFE62AD3EACC00FD4B09 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0463EFE42AD3D2ED00FD4B09 /* HBroadcastingRoomView.swift */,
+				0463EFE72AD3EAF500FD4B09 /* HDBottomView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -178,6 +260,7 @@
 		04E225B82AD147320012966B /* Pages */ = {
 			isa = PBXGroup;
 			children = (
+				0463EFD02AD3AD2C00FD4B09 /* DirectRooms */,
 				0435D1B92AD256E10090BAD5 /* DoodingBoard */,
 				042D02002A6F768300678042 /* BluetoothMonitor */,
 			);
@@ -228,6 +311,7 @@
 				0435D1B72AD24D360090BAD5 /* HHUD.swift */,
 				0435D1BF2AD2594F0090BAD5 /* HThemeColor.swift */,
 				0435D1C12AD27CB90090BAD5 /* HDevice.swift */,
+				0463EFE92AD3EF4000FD4B09 /* UIView+frame.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -368,6 +452,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0463EFD72AD3AE5F00FD4B09 /* Rooms.json in Resources */,
 				05CFEB6D2A6D682400A57FF6 /* Config.plist in Resources */,
 				05CFEB622A6D627C00A57FF6 /* LaunchScreen.storyboard in Resources */,
 				046C096C2A70CE4A00E02EBC /* SucceedsPostAction.sh in Resources */,
@@ -427,12 +512,18 @@
 			files = (
 				04E225C22AD15EA00012966B /* HHomeSubViewCell.swift in Sources */,
 				042D02062A6F78A700678042 /* HDeviceDetailController.swift in Sources */,
+				0463EFEA2AD3EF4000FD4B09 /* UIView+frame.swift in Sources */,
+				0463EFEC2AD3FBA800FD4B09 /* HBaseView.swift in Sources */,
 				046C096F2A70E93A00E02EBC /* HBluetoothManager.swift in Sources */,
 				04F683002A723EE8002C4EAA /* HAudioManager.swift in Sources */,
 				0435D1C22AD27CB90090BAD5 /* HDevice.swift in Sources */,
+				0463EFCF2AD39B7C00FD4B09 /* HDirectBroadcastingPage.swift in Sources */,
+				0463EFDC2AD3CF7C00FD4B09 /* HBroadcastingFactory.swift in Sources */,
+				0463EFDA2AD3C29E00FD4B09 /* HDirectRoomViewModel.swift in Sources */,
 				04F682FE2A721DEB002C4EAA /* StringExt.swift in Sources */,
 				05CFEB5A2A6D627B00A57FF6 /* ViewController.swift in Sources */,
 				042D02092A6F996A00678042 /* HBaseViewController.swift in Sources */,
+				0463EFE82AD3EAF500FD4B09 /* HDBottomView.swift in Sources */,
 				0435D1C02AD2594F0090BAD5 /* HThemeColor.swift in Sources */,
 				046C09712A70E9EE00E02EBC /* HBLECentralManager.swift in Sources */,
 				04F682F22A7210D8002C4EAA /* HChatViewController.swift in Sources */,
@@ -440,11 +531,16 @@
 				046C09752A70EC7200E02EBC /* HStore.swift in Sources */,
 				04E225BA2AD14A3C0012966B /* HConfig.swift in Sources */,
 				0435D1BE2AD258200090BAD5 /* DoodlingBoardView.swift in Sources */,
+				0463EFE12AD3D29D00FD4B09 /* HRTCRoomView.swift in Sources */,
+				0463EFDF2AD3D11200FD4B09 /* HToolBoxRoomPage.swift in Sources */,
+				0463EFE32AD3D2BE00FD4B09 /* HToolBoxRoomView.swift in Sources */,
 				0435D1BB2AD2570B0090BAD5 /* DoodlingBoardController.swift in Sources */,
 				042D020B2A6F9DE800678042 /* HBaseUtils.swift in Sources */,
+				0463EFE52AD3D2ED00FD4B09 /* HBroadcastingRoomView.swift in Sources */,
 				042D02022A6F786300678042 /* HBluetoothDeviceListController.swift in Sources */,
 				05CFEB702A6E69B700A57FF6 /* HHomeViewController.swift in Sources */,
 				04E225BF2AD15E760012966B /* HHomePageSubView.swift in Sources */,
+				0463EFD22AD3AD9400FD4B09 /* HDirectRoomListPage.swift in Sources */,
 				05CFEB6B2A6D646900A57FF6 /* RootController.swift in Sources */,
 				05CFEB562A6D627B00A57FF6 /* AppDelegate.swift in Sources */,
 				05CFEB582A6D627B00A57FF6 /* SceneDelegate.swift in Sources */,

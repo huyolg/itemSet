@@ -88,10 +88,6 @@ class HBluetoothDeviceListController: HBaseViewController {
 //        self.serviceCharacteristics = []
     }
     
-    
-    deinit {
-        print("\(self) dealloc")
-    }
 }
 
 extension HBluetoothDeviceListController: UITableViewDelegate, UITableViewDataSource {
