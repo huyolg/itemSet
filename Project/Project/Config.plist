@@ -65,6 +65,12 @@
 			<key>controllerName</key>
 			<string>HDirectRoomListPage</string>
 		</dict>
+		<dict>
+			<key>titleName</key>
+			<string>NetConnect</string>
+			<key>controllerName</key>
+			<string>HSocketConnectPage</string>
+		</dict>
 	</array>
 </dict>
 </plist>

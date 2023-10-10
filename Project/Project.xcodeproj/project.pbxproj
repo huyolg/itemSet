@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04244D022AD5285400536BB7 /* HSocketConnectPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04244D002AD5285400536BB7 /* HSocketConnectPage.swift */; };
+		04244D032AD5285400536BB7 /* HSocketConnectPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04244D012AD5285400536BB7 /* HSocketConnectPage.xib */; };
+		04244D052AD52B5B00536BB7 /* HSocketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04244D042AD52B5B00536BB7 /* HSocketViewModel.swift */; };
 		042D02022A6F786300678042 /* HBluetoothDeviceListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042D02012A6F786300678042 /* HBluetoothDeviceListController.swift */; };
 		042D02062A6F78A700678042 /* HDeviceDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042D02052A6F78A700678042 /* HDeviceDetailController.swift */; };
 		042D02092A6F996A00678042 /* HBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042D02082A6F996A00678042 /* HBaseViewController.swift */; };
@@ -59,6 +62,9 @@
 
 /* Begin PBXFileReference section */
 		034463BCADB51E103002F1E7 /* Pods-Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project.debug.xcconfig"; path = "Target Support Files/Pods-Project/Pods-Project.debug.xcconfig"; sourceTree = "<group>"; };
+		04244D002AD5285400536BB7 /* HSocketConnectPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSocketConnectPage.swift; sourceTree = "<group>"; };
+		04244D012AD5285400536BB7 /* HSocketConnectPage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HSocketConnectPage.xib; sourceTree = "<group>"; };
+		04244D042AD52B5B00536BB7 /* HSocketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSocketViewModel.swift; sourceTree = "<group>"; };
 		042D02012A6F786300678042 /* HBluetoothDeviceListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBluetoothDeviceListController.swift; sourceTree = "<group>"; };
 		042D02052A6F78A700678042 /* HDeviceDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDeviceDetailController.swift; sourceTree = "<group>"; };
 		042D02082A6F996A00678042 /* HBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBaseViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +132,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04244CFF2AD527B900536BB7 /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+				04244D002AD5285400536BB7 /* HSocketConnectPage.swift */,
+				04244D012AD5285400536BB7 /* HSocketConnectPage.xib */,
+				04244D042AD52B5B00536BB7 /* HSocketViewModel.swift */,
+			);
+			path = Socket;
+			sourceTree = "<group>";
+		};
 		042D02002A6F768300678042 /* BluetoothMonitor */ = {
 			isa = PBXGroup;
 			children = (
@@ -260,6 +276,7 @@
 		04E225B82AD147320012966B /* Pages */ = {
 			isa = PBXGroup;
 			children = (
+				04244CFF2AD527B900536BB7 /* Socket */,
 				0463EFD02AD3AD2C00FD4B09 /* DirectRooms */,
 				0435D1B92AD256E10090BAD5 /* DoodingBoard */,
 				042D02002A6F768300678042 /* BluetoothMonitor */,
@@ -455,6 +472,7 @@
 				0463EFD72AD3AE5F00FD4B09 /* Rooms.json in Resources */,
 				05CFEB6D2A6D682400A57FF6 /* Config.plist in Resources */,
 				05CFEB622A6D627C00A57FF6 /* LaunchScreen.storyboard in Resources */,
+				04244D032AD5285400536BB7 /* HSocketConnectPage.xib in Resources */,
 				046C096C2A70CE4A00E02EBC /* SucceedsPostAction.sh in Resources */,
 				05CFEB5F2A6D627C00A57FF6 /* Assets.xcassets in Resources */,
 				05CFEB5D2A6D627B00A57FF6 /* Main.storyboard in Resources */,
@@ -530,6 +548,7 @@
 				046C09672A70C3F700E02EBC /* HBluetoothDeviceCell.swift in Sources */,
 				046C09752A70EC7200E02EBC /* HStore.swift in Sources */,
 				04E225BA2AD14A3C0012966B /* HConfig.swift in Sources */,
+				04244D052AD52B5B00536BB7 /* HSocketViewModel.swift in Sources */,
 				0435D1BE2AD258200090BAD5 /* DoodlingBoardView.swift in Sources */,
 				0463EFE12AD3D29D00FD4B09 /* HRTCRoomView.swift in Sources */,
 				0463EFDF2AD3D11200FD4B09 /* HToolBoxRoomPage.swift in Sources */,
@@ -537,6 +556,7 @@
 				0435D1BB2AD2570B0090BAD5 /* DoodlingBoardController.swift in Sources */,
 				042D020B2A6F9DE800678042 /* HBaseUtils.swift in Sources */,
 				0463EFE52AD3D2ED00FD4B09 /* HBroadcastingRoomView.swift in Sources */,
+				04244D022AD5285400536BB7 /* HSocketConnectPage.swift in Sources */,
 				042D02022A6F786300678042 /* HBluetoothDeviceListController.swift in Sources */,
 				05CFEB702A6E69B700A57FF6 /* HHomeViewController.swift in Sources */,
 				04E225BF2AD15E760012966B /* HHomePageSubView.swift in Sources */,

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HSocketConnectPage" customModule="Project" customModuleProvider="target">
+            <connections>
+                <outlet property="SendBtn" destination="aHB-Bl-cSD" id="zOf-m4-5s4"/>
+                <outlet property="connectBtn" destination="uhh-rR-Bub" id="TFs-WT-J9o"/>
+                <outlet property="disconnectBtn" destination="9uQ-Mp-w5t" id="8QZ-dC-akL"/>
+                <outlet property="textInput" destination="QI5-8q-HZy" id="HqM-jB-ZcB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhh-rR-Bub">
+                    <rect key="frame" x="151.66666666666666" y="278" width="90" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="eZO-0u-QIx"/>
+                        <constraint firstAttribute="width" constant="90" id="xNw-PZ-VvP"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Connect"/>
+                    <connections>
+                        <action selector="handlerConnect:" destination="-1" eventType="touchUpInside" id="uHZ-Qy-wSc"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9uQ-Mp-w5t">
+                    <rect key="frame" x="139" y="328" width="115" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="B3E-SL-dQy"/>
+                        <constraint firstAttribute="width" constant="115" id="a6g-m1-Uv0"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Disconnect"/>
+                    <connections>
+                        <action selector="handlerDisconnect:" destination="-1" eventType="touchUpInside" id="2al-J3-0QO"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Say something" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QI5-8q-HZy">
+                    <rect key="frame" x="126.66666666666669" y="119" width="140" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="ObC-vy-K0e"/>
+                        <constraint firstAttribute="width" constant="140" id="Svh-Fy-KNv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aHB-Bl-cSD">
+                    <rect key="frame" x="159" y="168" width="75" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="75" id="B78-fu-wWv"/>
+                        <constraint firstAttribute="height" constant="35" id="eK0-FG-3sf"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Send"/>
+                    <connections>
+                        <action selector="handlerSend:" destination="-1" eventType="touchUpInside" id="4eF-YO-QX0"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="uhh-rR-Bub" firstAttribute="top" secondItem="aHB-Bl-cSD" secondAttribute="bottom" constant="75" id="5Ko-Yl-A1z"/>
+                <constraint firstItem="9uQ-Mp-w5t" firstAttribute="top" secondItem="uhh-rR-Bub" secondAttribute="bottom" constant="15" id="CX8-Rr-2Tr"/>
+                <constraint firstItem="uhh-rR-Bub" firstAttribute="centerX" secondItem="QI5-8q-HZy" secondAttribute="centerX" id="QOI-P6-tgA"/>
+                <constraint firstItem="aHB-Bl-cSD" firstAttribute="top" secondItem="QI5-8q-HZy" secondAttribute="bottom" constant="15" id="dGE-tY-ocS"/>
+                <constraint firstItem="9uQ-Mp-w5t" firstAttribute="centerX" secondItem="QI5-8q-HZy" secondAttribute="centerX" id="hqX-Rg-TvZ"/>
+                <constraint firstItem="aHB-Bl-cSD" firstAttribute="centerX" secondItem="QI5-8q-HZy" secondAttribute="centerX" id="nSk-ww-VYk"/>
+                <constraint firstItem="QI5-8q-HZy" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="60" id="q8N-8F-O51"/>
+                <constraint firstItem="QI5-8q-HZy" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="xs4-hX-6sT"/>
+            </constraints>
+            <point key="canvasLocation" x="131" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

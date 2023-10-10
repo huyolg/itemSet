@@ -13,4 +13,6 @@ target 'Project' do
   
   pod 'RxSwift'
   pod 'RxCocoa'
+  
+  pod 'CocoaAsyncSocket'
 end
