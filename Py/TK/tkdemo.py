@@ -6,22 +6,22 @@ from random import randint
 class Guess(tkinter.Frame):
     def setTK(self):
 
-        lab1 = tkinter.Label(self._tk, text='你猜的数字：')
-        self.entry1 = tkinter.Entry(self._tk)
+        lab1 = tkinter.Label(self, text='你猜的数字：')
+        self.entry1 = tkinter.Entry(self)
 
-        self.tipsLab = tkinter.Label(self._tk)
+        self.tipsLab = tkinter.Label(self)
 
         confirmBtn = tkinter.Button(
-            self._tk, text='确定', command=self.handlerConfirm)
+            self, text='确定', command=self.handlerConfirm)
 
         lab1.grid(row=0)
         self.entry1.grid(row=0, column=1)
         confirmBtn.grid(row=0, column=2)
         self.tipsLab.grid(row=1, column=1)
 
-        doneBtn = tkinter.Button(self._tk, text='我知道了')
+        doneBtn = tkinter.Button(self, text='我知道了')
         retryBtn = tkinter.Button(
-            self._tk, text='再来一遍', command=self.handlerRetry)
+            self, text='再来一遍', command=self.handlerRetry)
 
         doneBtn.grid(row=3, column=1)
         retryBtn.grid(row=3, column=2)
@@ -61,12 +61,14 @@ class Guess(tkinter.Frame):
         self.tipsLab['text'] = result
 
     def __init__(self, master=None):
+        tkinter.Frame.__init__(self, master)
         self._gusNum = -1
         self._tk = master
         self._answer = randint(0, 100)
         self._count = 0
-        tkinter.Frame = master
+
         self.setTK()
+        self.pack()
 
 
 tkWindow = tkinter.Tk()
