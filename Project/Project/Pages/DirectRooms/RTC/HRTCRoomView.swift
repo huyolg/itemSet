@@ -59,6 +59,7 @@ class HRTCRoomView: HBroadcastingRoomView {
         mediaConstraints = RTCMediaConstraints(mandatoryConstraints: mandatoryConstraints, optionalConstraints: optionalConstraints)
         localPeerConnection?.offer(for: mediaConstraints, completionHandler: { sessionDescription, error in
             print("create offer success.")
+            print(sessionDescription)
             // 将 offer sdp 作为参数 setLocalDescription
             self.localPeerConnection?.setLocalDescription(sessionDescription!, completionHandler: { _ in
                 print("set local sdp success.")

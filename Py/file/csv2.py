@@ -23,7 +23,8 @@ class Student(object):
 
 
 fileName = 'student.csv'
-students = [Student('hanli', 188, 'xiulian'), Student('hanlei', 18, 'study')]
+students = [Student('hanli', 188, 'xiulian'), Student(
+    'hanlei', 18, 'study'), Student('hanleimin', 18, 'trave')]
 
 try:
     with open(fileName, 'w', encoding='utf-8') as f:

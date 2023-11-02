@@ -14,5 +14,7 @@ target 'Project' do
   pod 'RxSwift'
   pod 'RxCocoa'
   
+  pod 'CryptoSwift', '~> 1.8.0'
+  
   pod 'CocoaAsyncSocket'
 end

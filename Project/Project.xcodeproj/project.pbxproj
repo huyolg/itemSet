@@ -19,6 +19,10 @@
 		0435D1BE2AD258200090BAD5 /* DoodlingBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0435D1BD2AD258200090BAD5 /* DoodlingBoardView.swift */; };
 		0435D1C02AD2594F0090BAD5 /* HThemeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0435D1BF2AD2594F0090BAD5 /* HThemeColor.swift */; };
 		0435D1C22AD27CB90090BAD5 /* HDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0435D1C12AD27CB90090BAD5 /* HDevice.swift */; };
+		046349EA2ADE207E005BE975 /* HNFCScanPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046349E92ADE207E005BE975 /* HNFCScanPage.swift */; };
+		046349EF2ADE23D8005BE975 /* HNFCReadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046349EE2ADE23D8005BE975 /* HNFCReadView.swift */; };
+		046349F12ADE2D25005BE975 /* HNFCTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046349F02ADE2D25005BE975 /* HNFCTag.swift */; };
+		046349F32ADE2F2C005BE975 /* HNFCISO7816TagSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046349F22ADE2F2C005BE975 /* HNFCISO7816TagSession.swift */; };
 		0463EFCF2AD39B7C00FD4B09 /* HDirectBroadcastingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0463EFCE2AD39B7C00FD4B09 /* HDirectBroadcastingPage.swift */; };
 		0463EFD22AD3AD9400FD4B09 /* HDirectRoomListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0463EFD12AD3AD9400FD4B09 /* HDirectRoomListPage.swift */; };
 		0463EFD72AD3AE5F00FD4B09 /* Rooms.json in Resources */ = {isa = PBXBuildFile; fileRef = 0463EFD62AD3AE5F00FD4B09 /* Rooms.json */; };
@@ -74,6 +78,11 @@
 		0435D1BD2AD258200090BAD5 /* DoodlingBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoodlingBoardView.swift; sourceTree = "<group>"; };
 		0435D1BF2AD2594F0090BAD5 /* HThemeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HThemeColor.swift; sourceTree = "<group>"; };
 		0435D1C12AD27CB90090BAD5 /* HDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDevice.swift; sourceTree = "<group>"; };
+		046349E72ADE1FCB005BE975 /* Project.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Project.entitlements; sourceTree = "<group>"; };
+		046349E92ADE207E005BE975 /* HNFCScanPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNFCScanPage.swift; sourceTree = "<group>"; };
+		046349EE2ADE23D8005BE975 /* HNFCReadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNFCReadView.swift; sourceTree = "<group>"; };
+		046349F02ADE2D25005BE975 /* HNFCTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNFCTag.swift; sourceTree = "<group>"; };
+		046349F22ADE2F2C005BE975 /* HNFCISO7816TagSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNFCISO7816TagSession.swift; sourceTree = "<group>"; };
 		0463EFCE2AD39B7C00FD4B09 /* HDirectBroadcastingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDirectBroadcastingPage.swift; sourceTree = "<group>"; };
 		0463EFD12AD3AD9400FD4B09 /* HDirectRoomListPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDirectRoomListPage.swift; sourceTree = "<group>"; };
 		0463EFD62AD3AE5F00FD4B09 /* Rooms.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Rooms.json; sourceTree = "<group>"; };
@@ -197,6 +206,25 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		046349E82ADE204C005BE975 /* NFC */ = {
+			isa = PBXGroup;
+			children = (
+				046349ED2ADE2393005BE975 /* views */,
+				046349E92ADE207E005BE975 /* HNFCScanPage.swift */,
+				046349F02ADE2D25005BE975 /* HNFCTag.swift */,
+				046349F22ADE2F2C005BE975 /* HNFCISO7816TagSession.swift */,
+			);
+			path = NFC;
+			sourceTree = "<group>";
+		};
+		046349ED2ADE2393005BE975 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				046349EE2ADE23D8005BE975 /* HNFCReadView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
 		0463EFCD2AD39A4B00FD4B09 /* RTC */ = {
 			isa = PBXGroup;
 			children = (
@@ -276,6 +304,7 @@
 		04E225B82AD147320012966B /* Pages */ = {
 			isa = PBXGroup;
 			children = (
+				046349E82ADE204C005BE975 /* NFC */,
 				04244CFF2AD527B900536BB7 /* Socket */,
 				0463EFD02AD3AD2C00FD4B09 /* DirectRooms */,
 				0435D1B92AD256E10090BAD5 /* DoodingBoard */,
@@ -354,6 +383,7 @@
 		05CFEB542A6D627B00A57FF6 /* Project */ = {
 			isa = PBXGroup;
 			children = (
+				046349E72ADE1FCB005BE975 /* Project.entitlements */,
 				04E225B82AD147320012966B /* Pages */,
 				04F682FC2A721DA5002C4EAA /* Utils */,
 				04F682EF2A7207A1002C4EAA /* ASR */,
@@ -528,6 +558,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				046349F32ADE2F2C005BE975 /* HNFCISO7816TagSession.swift in Sources */,
 				04E225C22AD15EA00012966B /* HHomeSubViewCell.swift in Sources */,
 				042D02062A6F78A700678042 /* HDeviceDetailController.swift in Sources */,
 				0463EFEA2AD3EF4000FD4B09 /* UIView+frame.swift in Sources */,
@@ -539,11 +570,13 @@
 				0463EFDC2AD3CF7C00FD4B09 /* HBroadcastingFactory.swift in Sources */,
 				0463EFDA2AD3C29E00FD4B09 /* HDirectRoomViewModel.swift in Sources */,
 				04F682FE2A721DEB002C4EAA /* StringExt.swift in Sources */,
+				046349F12ADE2D25005BE975 /* HNFCTag.swift in Sources */,
 				05CFEB5A2A6D627B00A57FF6 /* ViewController.swift in Sources */,
 				042D02092A6F996A00678042 /* HBaseViewController.swift in Sources */,
 				0463EFE82AD3EAF500FD4B09 /* HDBottomView.swift in Sources */,
 				0435D1C02AD2594F0090BAD5 /* HThemeColor.swift in Sources */,
 				046C09712A70E9EE00E02EBC /* HBLECentralManager.swift in Sources */,
+				046349EA2ADE207E005BE975 /* HNFCScanPage.swift in Sources */,
 				04F682F22A7210D8002C4EAA /* HChatViewController.swift in Sources */,
 				046C09672A70C3F700E02EBC /* HBluetoothDeviceCell.swift in Sources */,
 				046C09752A70EC7200E02EBC /* HStore.swift in Sources */,
@@ -559,6 +592,7 @@
 				04244D022AD5285400536BB7 /* HSocketConnectPage.swift in Sources */,
 				042D02022A6F786300678042 /* HBluetoothDeviceListController.swift in Sources */,
 				05CFEB702A6E69B700A57FF6 /* HHomeViewController.swift in Sources */,
+				046349EF2ADE23D8005BE975 /* HNFCReadView.swift in Sources */,
 				04E225BF2AD15E760012966B /* HHomePageSubView.swift in Sources */,
 				0463EFD22AD3AD9400FD4B09 /* HDirectRoomListPage.swift in Sources */,
 				05CFEB6B2A6D646900A57FF6 /* RootController.swift in Sources */,
@@ -714,13 +748,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Project/Project.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JF8JDN6HNG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Project/Info.plist;
+				INFOPLIST_KEY_NFCReaderUsageDescription = "需要使用NFC读取卡片信息";
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "需要使用你的蓝牙功能查询附近蓝牙设备";
 				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "需要使用你的蓝牙功能查询附近蓝牙设备";
+				INFOPLIST_KEY_NSCameraUsageDescription = "需要使用相机";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "需要使用话筒";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -732,7 +770,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = test.demo;
+				PRODUCT_BUNDLE_IDENTIFIER = hu.NFCProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -746,13 +784,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Project/Project.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JF8JDN6HNG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Project/Info.plist;
+				INFOPLIST_KEY_NFCReaderUsageDescription = "需要使用NFC读取卡片信息";
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "需要使用你的蓝牙功能查询附近蓝牙设备";
 				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "需要使用你的蓝牙功能查询附近蓝牙设备";
+				INFOPLIST_KEY_NSCameraUsageDescription = "需要使用相机";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "需要使用话筒";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -764,7 +806,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = test.demo;
+				PRODUCT_BUNDLE_IDENTIFIER = hu.NFCProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

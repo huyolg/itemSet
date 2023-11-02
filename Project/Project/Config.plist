@@ -71,6 +71,12 @@
 			<key>controllerName</key>
 			<string>HSocketConnectPage</string>
 		</dict>
+		<dict>
+			<key>titleName</key>
+			<string>NFC</string>
+			<key>controllerName</key>
+			<string>HNFCScanPage</string>
+		</dict>
 	</array>
 </dict>
 </plist>
