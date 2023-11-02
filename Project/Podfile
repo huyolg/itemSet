@@ -17,4 +17,5 @@ target 'Project' do
   pod 'CryptoSwift', '~> 1.8.0'
   
   pod 'CocoaAsyncSocket'
+  pod 'Starscream'
 end

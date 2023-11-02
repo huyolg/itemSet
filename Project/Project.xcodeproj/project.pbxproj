@@ -42,6 +42,15 @@
 		046C09712A70E9EE00E02EBC /* HBLECentralManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046C09702A70E9EE00E02EBC /* HBLECentralManager.swift */; };
 		046C09732A70EB6B00E02EBC /* Peripheral+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046C09722A70EB6B00E02EBC /* Peripheral+Ext.swift */; };
 		046C09752A70EC7200E02EBC /* HStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046C09742A70EC7200E02EBC /* HStore.swift */; };
+		048731752AF383B700539D5C /* SessionDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048731742AF383B700539D5C /* SessionDescription.swift */; };
+		048731772AF386FB00539D5C /* IceCandidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048731762AF386FB00539D5C /* IceCandidate.swift */; };
+		048731792AF3883B00539D5C /* RTCStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048731782AF3883B00539D5C /* RTCStates.swift */; };
+		0487317B2AF389DF00539D5C /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0487317A2AF389DF00539D5C /* Message.swift */; };
+		0487317D2AF38ADC00539D5C /* WebSocketProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0487317C2AF38ADC00539D5C /* WebSocketProvider.swift */; };
+		0487317F2AF38B8000539D5C /* NativeWebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0487317E2AF38B8000539D5C /* NativeWebSocket.swift */; };
+		048731812AF38BC100539D5C /* StarscreamProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048731802AF38BC100539D5C /* StarscreamProvider.swift */; };
+		048731832AF38D6C00539D5C /* WebRTCClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048731822AF38D6C00539D5C /* WebRTCClient.swift */; };
+		048731852AF3921000539D5C /* SignalingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048731842AF3921000539D5C /* SignalingClient.swift */; };
 		04E225BA2AD14A3C0012966B /* HConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E225B92AD14A3C0012966B /* HConfig.swift */; };
 		04E225BD2AD152F40012966B /* HHomePageSubViewUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E225BC2AD152F40012966B /* HHomePageSubViewUI.swift */; };
 		04E225BF2AD15E760012966B /* HHomePageSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E225BE2AD15E760012966B /* HHomePageSubView.swift */; };
@@ -102,6 +111,15 @@
 		046C09702A70E9EE00E02EBC /* HBLECentralManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBLECentralManager.swift; sourceTree = "<group>"; };
 		046C09722A70EB6B00E02EBC /* Peripheral+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Peripheral+Ext.swift"; sourceTree = "<group>"; };
 		046C09742A70EC7200E02EBC /* HStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStore.swift; sourceTree = "<group>"; };
+		048731742AF383B700539D5C /* SessionDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDescription.swift; sourceTree = "<group>"; };
+		048731762AF386FB00539D5C /* IceCandidate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCandidate.swift; sourceTree = "<group>"; };
+		048731782AF3883B00539D5C /* RTCStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTCStates.swift; sourceTree = "<group>"; };
+		0487317A2AF389DF00539D5C /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		0487317C2AF38ADC00539D5C /* WebSocketProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketProvider.swift; sourceTree = "<group>"; };
+		0487317E2AF38B8000539D5C /* NativeWebSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeWebSocket.swift; sourceTree = "<group>"; };
+		048731802AF38BC100539D5C /* StarscreamProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarscreamProvider.swift; sourceTree = "<group>"; };
+		048731822AF38D6C00539D5C /* WebRTCClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRTCClient.swift; sourceTree = "<group>"; };
+		048731842AF3921000539D5C /* SignalingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalingClient.swift; sourceTree = "<group>"; };
 		04E225B92AD14A3C0012966B /* HConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HConfig.swift; sourceTree = "<group>"; };
 		04E225BC2AD152F40012966B /* HHomePageSubViewUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHomePageSubViewUI.swift; sourceTree = "<group>"; };
 		04E225BE2AD15E760012966B /* HHomePageSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHomePageSubView.swift; sourceTree = "<group>"; };
@@ -228,6 +246,8 @@
 		0463EFCD2AD39A4B00FD4B09 /* RTC */ = {
 			isa = PBXGroup;
 			children = (
+				048731732AF3838300539D5C /* Ext */,
+				048731722AF3836300539D5C /* WebSocketProvider */,
 				0463EFE02AD3D29D00FD4B09 /* HRTCRoomView.swift */,
 			);
 			path = RTC;
@@ -299,6 +319,29 @@
 				046C09742A70EC7200E02EBC /* HStore.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		048731722AF3836300539D5C /* WebSocketProvider */ = {
+			isa = PBXGroup;
+			children = (
+				0487317A2AF389DF00539D5C /* Message.swift */,
+				0487317C2AF38ADC00539D5C /* WebSocketProvider.swift */,
+				0487317E2AF38B8000539D5C /* NativeWebSocket.swift */,
+				048731802AF38BC100539D5C /* StarscreamProvider.swift */,
+				048731822AF38D6C00539D5C /* WebRTCClient.swift */,
+				048731842AF3921000539D5C /* SignalingClient.swift */,
+			);
+			path = WebSocketProvider;
+			sourceTree = "<group>";
+		};
+		048731732AF3838300539D5C /* Ext */ = {
+			isa = PBXGroup;
+			children = (
+				048731742AF383B700539D5C /* SessionDescription.swift */,
+				048731762AF386FB00539D5C /* IceCandidate.swift */,
+				048731782AF3883B00539D5C /* RTCStates.swift */,
+			);
+			path = Ext;
 			sourceTree = "<group>";
 		};
 		04E225B82AD147320012966B /* Pages */ = {
@@ -559,6 +602,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				046349F32ADE2F2C005BE975 /* HNFCISO7816TagSession.swift in Sources */,
+				048731852AF3921000539D5C /* SignalingClient.swift in Sources */,
 				04E225C22AD15EA00012966B /* HHomeSubViewCell.swift in Sources */,
 				042D02062A6F78A700678042 /* HDeviceDetailController.swift in Sources */,
 				0463EFEA2AD3EF4000FD4B09 /* UIView+frame.swift in Sources */,
@@ -569,6 +613,7 @@
 				0463EFCF2AD39B7C00FD4B09 /* HDirectBroadcastingPage.swift in Sources */,
 				0463EFDC2AD3CF7C00FD4B09 /* HBroadcastingFactory.swift in Sources */,
 				0463EFDA2AD3C29E00FD4B09 /* HDirectRoomViewModel.swift in Sources */,
+				048731812AF38BC100539D5C /* StarscreamProvider.swift in Sources */,
 				04F682FE2A721DEB002C4EAA /* StringExt.swift in Sources */,
 				046349F12ADE2D25005BE975 /* HNFCTag.swift in Sources */,
 				05CFEB5A2A6D627B00A57FF6 /* ViewController.swift in Sources */,
@@ -578,12 +623,16 @@
 				046C09712A70E9EE00E02EBC /* HBLECentralManager.swift in Sources */,
 				046349EA2ADE207E005BE975 /* HNFCScanPage.swift in Sources */,
 				04F682F22A7210D8002C4EAA /* HChatViewController.swift in Sources */,
+				0487317D2AF38ADC00539D5C /* WebSocketProvider.swift in Sources */,
+				048731772AF386FB00539D5C /* IceCandidate.swift in Sources */,
 				046C09672A70C3F700E02EBC /* HBluetoothDeviceCell.swift in Sources */,
+				048731832AF38D6C00539D5C /* WebRTCClient.swift in Sources */,
 				046C09752A70EC7200E02EBC /* HStore.swift in Sources */,
 				04E225BA2AD14A3C0012966B /* HConfig.swift in Sources */,
 				04244D052AD52B5B00536BB7 /* HSocketViewModel.swift in Sources */,
 				0435D1BE2AD258200090BAD5 /* DoodlingBoardView.swift in Sources */,
 				0463EFE12AD3D29D00FD4B09 /* HRTCRoomView.swift in Sources */,
+				0487317B2AF389DF00539D5C /* Message.swift in Sources */,
 				0463EFDF2AD3D11200FD4B09 /* HToolBoxRoomPage.swift in Sources */,
 				0463EFE32AD3D2BE00FD4B09 /* HToolBoxRoomView.swift in Sources */,
 				0435D1BB2AD2570B0090BAD5 /* DoodlingBoardController.swift in Sources */,
@@ -593,8 +642,11 @@
 				042D02022A6F786300678042 /* HBluetoothDeviceListController.swift in Sources */,
 				05CFEB702A6E69B700A57FF6 /* HHomeViewController.swift in Sources */,
 				046349EF2ADE23D8005BE975 /* HNFCReadView.swift in Sources */,
+				048731752AF383B700539D5C /* SessionDescription.swift in Sources */,
 				04E225BF2AD15E760012966B /* HHomePageSubView.swift in Sources */,
 				0463EFD22AD3AD9400FD4B09 /* HDirectRoomListPage.swift in Sources */,
+				048731792AF3883B00539D5C /* RTCStates.swift in Sources */,
+				0487317F2AF38B8000539D5C /* NativeWebSocket.swift in Sources */,
 				05CFEB6B2A6D646900A57FF6 /* RootController.swift in Sources */,
 				05CFEB562A6D627B00A57FF6 /* AppDelegate.swift in Sources */,
 				05CFEB582A6D627B00A57FF6 /* SceneDelegate.swift in Sources */,
