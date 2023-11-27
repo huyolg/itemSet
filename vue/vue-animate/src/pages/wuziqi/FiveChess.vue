@@ -207,7 +207,7 @@ const AI = () => {
             u = i
             v = j
           }
-        }
+        } 
 
         if (pcScore[i][j] > max) {
           max = pcScore[i][j]

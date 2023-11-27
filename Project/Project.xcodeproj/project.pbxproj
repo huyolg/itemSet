@@ -57,6 +57,10 @@
 		04E225C22AD15EA00012966B /* HHomeSubViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E225C02AD15EA00012966B /* HHomeSubViewCell.swift */; };
 		04EDB0492A8337A400C09AAC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04EDB0482A8337A300C09AAC /* AVFoundation.framework */; };
 		04EDB04B2A8337AF00C09AAC /* AVFAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04EDB04A2A8337AE00C09AAC /* AVFAudio.framework */; };
+		04F5F0C22AFB65DA005AB974 /* HCoderConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5F0C12AFB65DA005AB974 /* HCoderConfig.swift */; };
+		04F5F0C42AFB678D005AB974 /* HVideoDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5F0C32AFB678D005AB974 /* HVideoDecoder.swift */; };
+		04F5F0C72AFB720E005AB974 /* HVideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5F0C62AFB720E005AB974 /* HVideoCapture.swift */; };
+		04F5F0C92AFB7375005AB974 /* HVideoCaptureConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5F0C82AFB7375005AB974 /* HVideoCaptureConfig.swift */; };
 		04F682F22A7210D8002C4EAA /* HChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F682F12A7210D8002C4EAA /* HChatViewController.swift */; };
 		04F682FB2A721D28002C4EAA /* HPlaybackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F682FA2A721D28002C4EAA /* HPlaybackManager.swift */; };
 		04F682FE2A721DEB002C4EAA /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F682FD2A721DEB002C4EAA /* StringExt.swift */; };
@@ -126,6 +130,10 @@
 		04E225C02AD15EA00012966B /* HHomeSubViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHomeSubViewCell.swift; sourceTree = "<group>"; };
 		04EDB0482A8337A300C09AAC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		04EDB04A2A8337AE00C09AAC /* AVFAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFAudio.framework; path = System/Library/Frameworks/AVFAudio.framework; sourceTree = SDKROOT; };
+		04F5F0C12AFB65DA005AB974 /* HCoderConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCoderConfig.swift; sourceTree = "<group>"; };
+		04F5F0C32AFB678D005AB974 /* HVideoDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HVideoDecoder.swift; sourceTree = "<group>"; };
+		04F5F0C62AFB720E005AB974 /* HVideoCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HVideoCapture.swift; sourceTree = "<group>"; };
+		04F5F0C82AFB7375005AB974 /* HVideoCaptureConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HVideoCaptureConfig.swift; sourceTree = "<group>"; };
 		04F682F12A7210D8002C4EAA /* HChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HChatViewController.swift; sourceTree = "<group>"; };
 		04F682FA2A721D28002C4EAA /* HPlaybackManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPlaybackManager.swift; sourceTree = "<group>"; };
 		04F682FD2A721DEB002C4EAA /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
@@ -287,8 +295,10 @@
 		0463EFDD2AD3D0E900FD4B09 /* ToolBox */ = {
 			isa = PBXGroup;
 			children = (
+				04F5F0C52AFB7196005AB974 /* Capture */,
 				0463EFDE2AD3D11200FD4B09 /* HToolBoxRoomPage.swift */,
 				0463EFE22AD3D2BE00FD4B09 /* HToolBoxRoomView.swift */,
+				04F5F0BE2AFB659B005AB974 /* Coder */,
 			);
 			path = ToolBox;
 			sourceTree = "<group>";
@@ -364,6 +374,40 @@
 				04E225C02AD15EA00012966B /* HHomeSubViewCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		04F5F0BE2AFB659B005AB974 /* Coder */ = {
+			isa = PBXGroup;
+			children = (
+				04F5F0C02AFB65B7005AB974 /* AudioCoder */,
+				04F5F0BF2AFB65A7005AB974 /* VideoCoder */,
+				04F5F0C12AFB65DA005AB974 /* HCoderConfig.swift */,
+			);
+			path = Coder;
+			sourceTree = "<group>";
+		};
+		04F5F0BF2AFB65A7005AB974 /* VideoCoder */ = {
+			isa = PBXGroup;
+			children = (
+				04F5F0C32AFB678D005AB974 /* HVideoDecoder.swift */,
+			);
+			path = VideoCoder;
+			sourceTree = "<group>";
+		};
+		04F5F0C02AFB65B7005AB974 /* AudioCoder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AudioCoder;
+			sourceTree = "<group>";
+		};
+		04F5F0C52AFB7196005AB974 /* Capture */ = {
+			isa = PBXGroup;
+			children = (
+				04F5F0C62AFB720E005AB974 /* HVideoCapture.swift */,
+				04F5F0C82AFB7375005AB974 /* HVideoCaptureConfig.swift */,
+			);
+			path = Capture;
 			sourceTree = "<group>";
 		};
 		04F682EF2A7207A1002C4EAA /* ASR */ = {
@@ -626,7 +670,9 @@
 				0487317D2AF38ADC00539D5C /* WebSocketProvider.swift in Sources */,
 				048731772AF386FB00539D5C /* IceCandidate.swift in Sources */,
 				046C09672A70C3F700E02EBC /* HBluetoothDeviceCell.swift in Sources */,
+				04F5F0C22AFB65DA005AB974 /* HCoderConfig.swift in Sources */,
 				048731832AF38D6C00539D5C /* WebRTCClient.swift in Sources */,
+				04F5F0C92AFB7375005AB974 /* HVideoCaptureConfig.swift in Sources */,
 				046C09752A70EC7200E02EBC /* HStore.swift in Sources */,
 				04E225BA2AD14A3C0012966B /* HConfig.swift in Sources */,
 				04244D052AD52B5B00536BB7 /* HSocketViewModel.swift in Sources */,
@@ -651,10 +697,12 @@
 				05CFEB562A6D627B00A57FF6 /* AppDelegate.swift in Sources */,
 				05CFEB582A6D627B00A57FF6 /* SceneDelegate.swift in Sources */,
 				046C096A2A70C63C00E02EBC /* HBluetoothDeviceModel.swift in Sources */,
+				04F5F0C42AFB678D005AB974 /* HVideoDecoder.swift in Sources */,
 				04E225BD2AD152F40012966B /* HHomePageSubViewUI.swift in Sources */,
 				046C09732A70EB6B00E02EBC /* Peripheral+Ext.swift in Sources */,
 				0435D1B82AD24D360090BAD5 /* HHUD.swift in Sources */,
 				04F682FB2A721D28002C4EAA /* HPlaybackManager.swift in Sources */,
+				04F5F0C72AFB720E005AB974 /* HVideoCapture.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -801,9 +849,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Project/Project.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = JF8JDN6HNG;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 58BG2F7YLT;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Project/Info.plist;
 				INFOPLIST_KEY_NFCReaderUsageDescription = "需要使用NFC读取卡片信息";
@@ -822,8 +872,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = hu.NFCProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.feihui.zhiyi1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = dis_zhiyi1;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -837,9 +889,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Project/Project.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = JF8JDN6HNG;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 58BG2F7YLT;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Project/Info.plist;
 				INFOPLIST_KEY_NFCReaderUsageDescription = "需要使用NFC读取卡片信息";
@@ -858,8 +912,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = hu.NFCProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.feihui.zhiyi1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = dev_zhiyi1;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

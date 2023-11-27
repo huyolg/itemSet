@@ -3,7 +3,7 @@
 - 访问器/修改器/删除器
 - 使用__slots__对属性加以限制
 """
-
+import scoretable
 
 class Car(object):
     __slots__ = ('_brand', '_max_speed')
@@ -46,3 +46,5 @@ print(Car.brand)
 print(Car.brand.fget)
 print(Car.brand.fset)
 print(Car.brand.fdel)
+
+sc = scoretable.Scores()

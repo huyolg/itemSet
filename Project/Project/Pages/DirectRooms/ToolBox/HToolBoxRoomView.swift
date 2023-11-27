@@ -20,6 +20,8 @@ class HToolBoxRoomView: HBroadcastingRoomView {
     
     func setup() {
         // 创建编码会话
+        let code = HVideoDecoder(config: HVideoCoderConfig())
+        
         
     }
     

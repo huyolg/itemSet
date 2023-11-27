@@ -338,3 +338,8 @@ print(scores.pop('xiaoming', 100))
 # 清空字典
 scores.clear()
 print(scores)
+
+
+
+
+stu = 
